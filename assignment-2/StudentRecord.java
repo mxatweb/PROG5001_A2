@@ -47,13 +47,39 @@ public class StudentRecord {
 
         Scanner input = new Scanner(System.in);
 
-        input.close();
-
         menu_option = input.nextLine().trim();
+
+        // validate input
+        try {
+            int choice = Integer.parseInt(menu_option);
+            if (choice > 5 || choice < 0) {
+                // input.close();
+                System.out.println("Invalid Menu Option. Try Again!");
+                System.out.print("> Select a menu option to continue: ");
+                getMenuOption();
+
+            }
+
+        } catch (Exception e) {
+            System.out.println("Invalid Menu Option. Try Again!");
+            System.out.print("> Select a menu option to continue: ");
+            getMenuOption();
+
+        }
+
+        // finally {
+        // System.out.print("> Select a menu option to continue: ");
+        // getMenuOption();
+        // input.close();
+
+        // }
 
         if (menu_option.equals("1")) {
             // option 1
-            data = dataReader.getStudentRecords();
+            if (data.size() == 0) {
+                data = dataReader.getStudentRecords();
+
+            }
             System.out.println("Text file successfully read!");
             System.out.print("> Select a menu option to continue: ");
             getMenuOption();
@@ -90,9 +116,10 @@ public class StudentRecord {
             getMenuOption();
         }
         if (menu_option.equals("5")) {
-            System.out.print("Program exited...goodbye!");
+            System.out.println("Program exited...goodbye!");
             System.exit(0);
         }
+
     }
 
     public static void printStudentRecords() {
@@ -158,6 +185,7 @@ public class StudentRecord {
             total = 0;
 
         }
+        i = 1;
 
     }
 
@@ -178,15 +206,21 @@ public class StudentRecord {
 
         Scanner input = new Scanner(System.in);
         System.out.print("> Enter Threshold: ");
-        threshold = input.nextDouble();
-        input.close();
 
-        System.out.println(
-                "+------------------------------------------------------------------------------------------------------------------+");
-        System.out.println(
-                "|                 List of students with their total marks less than a certain threshold                            |");
-        System.out.println(
-                "+------------------------------------------------------------------------------------------------------------------+");
+        // validate input
+        try {
+            threshold = input.nextDouble();
+            System.out.println(
+                    "+------------------------------------------------------------------------------------------------------------------+");
+            System.out.println(
+                    "|                 List of students with their total marks less than a certain threshold                            |");
+            System.out.println(
+                    "+------------------------------------------------------------------------------------------------------------------+");
+
+        } catch (Exception e) {
+            System.out.println("Invalid Input. Please try again!");
+
+        }
 
         // loop through data, and use threshold to filter data
 
@@ -210,6 +244,7 @@ public class StudentRecord {
             total = 0;
 
         }
+        i = 1;
 
     }
 
@@ -307,4 +342,5 @@ public class StudentRecord {
         }
 
     }
+
 }

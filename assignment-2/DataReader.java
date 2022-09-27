@@ -27,7 +27,8 @@ public class DataReader {
 
     public ArrayList<Student> getStudentRecords() {
         try {
-            Scanner sc = new Scanner(new File("C:\\Users\\inlig\\Downloads\\prog5001_students_grade_2022.csv"));
+            Scanner sc = new Scanner(new File(
+                    "C:\\Users\\inlig\\Documents\\GitHub\\PROG5001_A2\\assignment-2\\prog5001_students_grade_2022.csv"));
 
             unitName = sc.nextLine().split(":", 2)[1]; // read unit name
 
