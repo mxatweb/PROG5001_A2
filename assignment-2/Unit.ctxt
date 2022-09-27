@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Unit
+comment1.params=name\ assignments
+comment1.target=Unit(java.lang.String,\ java.util.ArrayList)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Unit\r\n
+comment2.params=
+comment2.target=java.lang.String\ getUnitName()
+comment3.params=
+comment3.target=java.util.ArrayList\ getassignments()
+numComments=4

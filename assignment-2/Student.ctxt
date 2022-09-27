@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Student
+comment1.params=lastName\ firstName\ studentId\ unit
+comment1.target=Student(java.lang.String,\ java.lang.String,\ java.lang.String,\ Unit)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Student\r\n
+comment2.params=
+comment2.target=java.lang.String\ getStudentName()
+comment3.params=
+comment3.target=java.lang.String\ getStudentId()
+numComments=4

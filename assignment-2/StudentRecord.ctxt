@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=StudentRecord
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=
+comment2.target=void\ printStudentRecords()
+comment2.text=\r\n\r\n\ F2\:\ Calculate\ the\ total\ mark\ for\ each\ student\r\n\ from\ the\ assessment\ marks\ and\ print\ out\ the\r\n\ list\ of\ students\ with\ their\ name,\ student\ id,\r\n\ assessment\ marks\ and\ the\ total\ mark.\r\n
+comment3.params=
+comment3.target=void\ printMarksLessThanThreshold()
+comment3.text=\r\n\ F3\:\ Print\ the\ list\ of\ students\ with\ the\ total\r\n\ marks\ less\ than\ a\ certain\ threshold.\ The\r\n\ threshold\ will\ be\ entered\ from\ keyboard.\r\n
+comment4.params=
+comment4.target=void\ printTopTenStudents()
+comment4.text=\r\n\ F4\:\ Print\ the\ top\ 10\ students\ with\ the\ highest\r\n\ total\ marks\ and\ top\ 10\ students\ with\ the\r\n\ lowest\ total\ marks\ (algorithm\ 1).\r\n
+numComments=5

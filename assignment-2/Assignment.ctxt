@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Assignment
+comment0.text=\r\n\ Assignment\ entity\ class.\r\n\r\n\ @author\ Martin\ Atwebembire\r\n\ @version\ 0.1(17.09.2022)\r\n
+comment1.params=name\ mark
+comment1.target=Assignment(java.lang.String,\ java.lang.String)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Assignment\r\n
+comment2.params=
+comment2.target=java.lang.String\ getAssignementName()
+comment3.params=
+comment3.target=java.lang.String\ getAssignmentMark()
+numComments=4

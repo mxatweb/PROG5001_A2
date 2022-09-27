@@ -1,0 +1,56 @@
+
+ + --------------------------------------------------------------------------------------------------------------------------+
+ | F4: Print the top 10 students with the highest total marks and top 10 students with the lowest total marks (algorithm 1). |
+ +---------------------------------------------------------------------------------------------------------------------------+
+
+1. Declare variables to store total , student name
+2. Declare HashMap to associate each student with their total mark
+3. Declare ArrayList to store tenHighestMarks
+4. Declare ArrayList to store tenLowestMarks
+5. For Each student in the text file data 
+    5.1 Get student name
+    5.2 Get list of assignments
+    5.3 For Each assignment
+        5.3.1 add assignment mark to total
+    5.4 End loop
+    5.5 add student name and their total to HashMap declared in step 2
+    5.6 set total = 0
+6. End Loop
+7. Add all values in the HashMap to an ArrayList
+8. Sort the totals ArrayList
+9. Remove duplicates from the totals ArrayList
+10.Select top ten lowest total marks from totals ArrayList
+11.Select top ten highest total marks from totals ArrayList
+12.For Each topTenHighestMarks
+    12.1 Print Student Name, Total marks
+13.End Loop
+14.For Each topTenLowestMarks
+    14.1 Print Student Name, Total marks
+15. End Loop
+
+ +----------------------------------------------------------------------------------------------------+
+ | F5: Create a simple menu system to allow users to select and execute each function (algorithm 2).  |
+ +----------------------------------------------------------------------------------------------------+
+1. Print Menu options
+2. Get menu selection from user
+3. IF selection = 1
+    3.1 read text file data
+    3.2 prompt user for next menu option
+    3.3 Get menu selection from user
+4. IF selection  = 2
+    4.1 IF text file hasn't been read, read text file data
+    4.2 Print all student records
+    4.3 Prompt user for next menu option
+    4.4 Get menu selection from user
+5. IF selection  = 3
+    5.1 IF text file hasn't been read, read text file data
+    5.2 Print Marks Less Than Threshold()
+    5.3 Prompt user for next menu option
+    5.4 Get menu selection from user
+6. IF selection  = 4
+    6.1 IF text file hasn't been read, read text file data
+    6.2 Print Top Ten Highest/Lowest Total Marks
+    6.3 Prompt user for next menu option
+    6.4 Get menu selection from user
+7. IF selection  = 5
+    6.1 Exit program
